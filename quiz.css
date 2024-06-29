@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #f8e0e6;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+.title{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+.heading{
+    align-self: center;
+    font-size: 25px;
+    font-weight: 300;
+}
+.logo{
+    background-image: url("imgs/four-squares-button-of-view-options\ \(1\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+
+}
+
+.container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.eyes{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -4%;
+    right: 21%;
+    z-index: 1;
+}
+
+.question-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.options{
+    margin: 2rem 0;
+    display: none;
+}
+
+.active{
+    display: flex;
+    position: relative;
+    background-color: #f1f1f1;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 2rem;
+    width: 50%;
+    flex-direction: column;
+}
+
+.active::before{
+    content: "";
+    background-color: pink;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border: 2px solid black;
+    border-radius: 25px;
+    top: 5%;
+    left: 2%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.option{
+    padding: 1rem 1rem 1rem 1.5rem;
+    background-color: rgb(237, 236, 236);
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+}
+
+
+input{
+    position: absolute;
+    left: 0;
+}
+
+
+label::before{
+    content: '';
+    font-weight: 750;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color:#f5c263;
+}
+
+label[class="option-a"]::before{
+    content: "A";
+}
+
+label[class="option-b"]::before{
+    content: "B";
+}
+
+label[class="option-c"]::before{
+    content: "C";
+}
+
+label[class="option-d"]::before{
+    content: "D";
+}
+
+label{
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+input:hover + label::before,
+input:checked + label::before,
+input:focus + label::before{
+    background-color: #f57a63;
+}
+
+.question{
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+.buttons{
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+button:hover,
+button:active{
+    color: #f5c263;
+    cursor: pointer;
+    background-color: rgb(237, 236, 236);
+}
+
+.btn-next{
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #f5c263;
+    color: black;
+    border-radius: 30px;
+    font-weight: 600;
+    width: 100px;
+}
+
+.btn-back{
+    display: none;
+    padding: 10px ;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #f5c263;
+    border-radius: 30px;
+    font-weight: 600;
+    width: 100px;
+}
+
+.btn-submit{
+    display: none;
+    padding: 10px ;
+    text-align: center;
+    border: 2px solid black;
+    background-color: #f57a63;
+    border-radius: 30px;
+    font-weight: 600;
+    width: 100px;
+}
+
+.btn-active{
+    display: block;
+}
+
+
+
+.results{
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.grade-image{
+    font-size: 50px;
+    color: #f5c263;
+    padding: 5rem .5rem;
+    border: 1rem solid #f5c263;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    background-color: rgb(237, 236, 236);
+}
+
+.grade{
+    color:#f5c263;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .title{
+    border-top: 1px solid black;
+    padding: 1.5rem 5rem;
+}

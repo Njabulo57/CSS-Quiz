@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js" defer></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="title">
+        <p class="heading">The CSS Quiz</p>
+        <div class="logo"></div>
+    </div>
+    <h1 class="question">What Does CSS Stand For?</h1>
+    <div class="container">
+            <div class="question-container">
+                <img src="imgs/eyes.svg" alt="pair of eyes" srcset="" class="eyes">
+                <div class="options active">
+                    <div class="row">
+                        <div class="option">
+                            <input type="radio" name="singleOpt1"  id="option-a" value="a">
+                            <label class="option-a"  for="option-a">Cascading Style Sheets</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="singleOpt1" id="option-b" value="b">
+                            <label  class="option-b" for="option-b">Computer Style Sheets</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <input type="radio" name="singleOpt1" id="option-c" value="c">
+                            <label class="option-c" for="option-c">Colorful Style Sheets</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="singleOpt1" id="option-d" value="d">
+                            <label class="option-d" for="option-d">Creative Style Sheets</label>
+                        </div>
+                    </div>   
+                </div>
+                <div class="options" >
+                    <div class="row">
+                        <div class="option">
+                            <input type="radio" name="singleOpt2"  id="option-a2" value="a">
+                            <label for="option-a2" class="option-a">bgcolor:</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="singleOpt2" id="option-b2" value="b">
+                            <label for="option-b2" class="option-b">color:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <input type="radio" name="singleOpt2" id="option-c2" value="c">
+                            <label for="option-c2" class="option-c">background-color:</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="singleOpt2" id="option-d2" value="d">
+                            <label for="option-d2" class="option-d">background:</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="options" >
+                    <div class="row">
+                        <div class="option">
+                            <input type="radio" name="singleOpt3"  id="option-a3" value="a">
+                            <label for="option-a3" class="option-a">#demo</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="singleOpt3" id="option-b3" value="b">
+                            <label for="option-b3" class="option-b">.demo</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <input type="radio" name="singleOpt3" id="option-c3" value="c">
+                            <label for="option-c3" class="option-c">demo</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="singleOpt3" id="option-d3" value="d">
+                            <label for="option-d3" class="option-d">*demo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="options" >
+                    <div class="row">
+                        <div class="option">
+                            <input type="radio" name="singleOpt4"  id="option-a4" value="a">
+                            <label for="option-a4" class="option-a">underline:none;</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="singleOpt4" id="option-b4" value="b">
+                            <label for="option-b4" class="option-b">text-decoration:none;</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <input type="radio" name="singleOpt4" id="option-c4" value="c">
+                            <label for="option-c4" class="option-c">text-decoration:no-underline;</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="singleOpt4" id="option-d4" value="d">
+                            <label for="option-d4" class="option-d">decoration:no-underline;</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="options" >
+                    <div class="row">
+                        <div class="option">
+                            <input type="radio" name="singleOpt5"  id="option-a5" value="a">
+                            <label for="option-a5" class="option-a">text-size</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="singleOpt5" id="option-b5" value="b">
+                            <label  for="option-b5" class="option-b">font-style</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="option">
+                            <input type="radio" name="singleOpt5" id="option-c5" value="c">
+                            <label for="option-c5" class="option-c">font-size</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="singleOpt5" id="option-d5" value="d">
+                            <label for="option-d5" class="option-d">text-style</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="results">
+            <h3 class="grade-image">Great Job</h3>
+            <p class="grade"></p>
+        </div>
+        <div class="buttons">
+            <button class="btn-next">Next</button>
+            <button class="btn-submit">Submit</button>
+            <button class="btn-back">Back</button>
+        </div>
+    </div>
+    <footer>
+            <div class="title">
+                <p class="heading">2024</p>
+            <p class="heading">@njabulokumalo57@gmail.com</p>
+            </div>
+    </footer>
+</body>
+</html>
